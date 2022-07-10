@@ -7,12 +7,7 @@ pipeline {
                 sh "sudo npm install"
             }
         }
-        stage("Test") {
-            steps {
-                 echo 'testing....'
-                sh "sudo npm test"
-            }
-        }
+       
         stage("Deploy") {
             steps {
                  echo 'deploying ....'
